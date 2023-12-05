@@ -6,9 +6,7 @@
     padding: 0;
 }
 
-.active {
-    color: black;
-}
+
 
 .nav-links a {
     display: block;
@@ -18,6 +16,11 @@
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
+    color: orange;
+}
+
+.active {
+    color: black !important;
 }
 
 @media screen and (max-width: 636px) {
