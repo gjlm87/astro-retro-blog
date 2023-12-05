@@ -1,0 +1,23 @@
+---
+const { pageTitle } = Astro.props;
+import "nes.css/css/nes.min.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+        <header></header> 
+        <main>
+          <h1> {pageTitle} </h1>
+          <slot />
+        </main> 
+        <footer></footer>
+		<link rel="stylesheet" href="/styles/global.css">
+	</body>
+</html>
